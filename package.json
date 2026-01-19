@@ -1,0 +1,16 @@
+{
+  "name": "gas-fakes-on-cloud-run",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "proof of concept - apps script code running in cloud run",
+  "main": "example.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "type ": "module",
+  "author": "bruce mcpherson",
+  "license": "ISC",
+  "dependencies": {
+    "@mcpher/gas-fakes": "^1.2.32"
+  }
+}
