@@ -298,7 +298,7 @@ const main = () => {
   for (const md5 of Object.keys(dups)) {
     for (const file of dups[md5]) {
       const parent = folderMap.get(file.parentId)
-      file.path = parent ? [parent.path, file.name, parent.name].join('/') : file.name
+      file.path = parent ? [parent.path, parent.name, file.name].join('/') : file.name
     }
   }
 
