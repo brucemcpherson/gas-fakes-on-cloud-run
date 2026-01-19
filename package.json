@@ -5,11 +5,25 @@
   "description": "proof of concept - apps script code running in cloud run",
   "main": "example.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node example.js"
   },
-  "type ": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brucemcpherson/gas-fakes-on-cloud-run.git"
+  },
+  "keywords": [
+    "google-apps-script",
+    "cloud-run",
+    "gas-fakes",
+    "node"
+  ],
   "author": "bruce mcpherson",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/brucemcpherson/gas-fakes-on-cloud-run/issues"
+  },
+  "homepage": "https://github.com/brucemcpherson/gas-fakes-on-cloud-run#readme",
   "dependencies": {
     "@mcpher/gas-fakes": "^1.2.32"
   }

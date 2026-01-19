@@ -1,5 +1,10 @@
 import '@mcpher/gas-fakes';
 
+// set these 2 to your target sheet  
+const SHEET_ID = '1CJjcBY17t2jdqP8LAJqe8jjje9ZcyuKtY0HJdCXgo2A'
+const SHEET_NAME_ALL = 'dedup-all'
+
+
 // we're using live apps script libraries as well!
 if (ScriptApp.isFake) {
   // Load all libraries from the project manifest
@@ -98,8 +103,7 @@ const getAllFolders = () => {
 
 // these sheets will be used to store the results
 const getFiddlers = () => {
-  const SHEET_ID = '1CJjcBY17t2jdqP8LAJqe8jjje9ZcyuKtY0HJdCXgo2A'
-  const SHEET_NAME_ALL = 'dedup-all'
+
   return {
     all: bmPreFiddler.PreFiddler().getFiddler({
       id: SHEET_ID,
